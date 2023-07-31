@@ -3,15 +3,13 @@ import java.util.Scanner;
 
 public class OasisNumberGuessingGame {
     public static void main(String[] args) {
-        System.out.println("Welcome to the Oasis Infobyte Number Guessing Game!");
-        //System.out.println("=============================================");
+        System.out.println("Welcome to the Oasis Infobyte Number Guessing Game!");        
         System.out.println("I'm thinking of a number between 1 and 100.");
-        //System.out.println("Try to guess it!");
 
         Random random = new Random();
         int targetNumber = random.nextInt(100) + 1;
         int attempts = 0;
-        int maxAttempts = 5; // Set the maximum number of attempts
+        int maxAttempts = 5;
         boolean guessedCorrectly = false;
 
         Scanner scanner = new Scanner(System.in);
